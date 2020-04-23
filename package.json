@@ -1,0 +1,17 @@
+{
+  "name": "joitest",
+  "version": "1.0.0",
+  "description": "test joi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "joi"
+  ],
+  "author": "handohee",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1"
+  }
+}
