@@ -48,7 +48,10 @@ any.describe().keys.key.rules.filter(e => e.name === 'min')
 ##### custom 정보 저장 ex) html 의 data-set 속성
 * [extensions](https://hapi.dev/module/joi/api/?v=17.1.1#extensions) 낮이도가 높고 사용방법에 대해서 문서화가 덜되어 있음
 * [custom method](https://hapi.dev/module/joi/api/?v=17.1.1#anycustommethod-description) 기본 값을 수정하는 방식이라 원래의 기능에서 벗어나게 되고 호환성 문제가 발생함
-* [messages](https://hapi.dev/module/joi/api/?v=17.1.1#anymessagesmessages) error 발생시에 적합한 사용 예제를 표시, select input 의 option 으로 사용하는 것은 원래의 목적을 벗어나는것?
+* [messages](https://hapi.dev/module/joi/api/?v=17.1.1#anymessagesmessages)
+  * error 발생시에 적합한 사용 예제를 표시
+  * select input 의 option 으로 사용하는 것은 원래의 목적을 벗어나는것?
+  * dat.GUI 의 select format 으로 사용하려면 key 와 value 의 변경이 
 
 ### Joi & GraphQL
 https://medium.com/@samueljoli/joi2gql-easily-convert-joi-schemas-into-graphql-data-types-c10b8dffb9cd
