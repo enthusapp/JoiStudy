@@ -40,6 +40,8 @@ console.log(testObj); // { a: 1 }
 ```
 
 ### Joi 를 이용하여 html input form 을 만들기
+현재까지의 결론 html input form(ex-dat.GUI) 을 위한 별도의 객체를 만든뒤에 그 객체를 이용하여 Joi schema 를 만드는 것이 더 편리
+
 ##### Joi schema 속성의 min, max 값을 확인하기
 > joi.min.js 에는 반드시 필요하지 않은 함수가 제거되어 있다.
 > web client 에서 사용할때는 `describe` 함수가 없기 때문에 schema 내부 변수를 참조해야 한다.
