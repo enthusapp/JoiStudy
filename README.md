@@ -39,8 +39,6 @@ tObj.value.a = 3;
 console.log(testObj); // { a: 1 }
 ```
 
-### Joi condition 속성
-
 ### Joi 를 이용하여 html input form 을 만들기
 ##### Joi schema 속성의 min, max 값을 확인하기
 > joi.min.js 에는 반드시 필요하지 않은 함수가 제거되어 있다.
@@ -58,6 +56,9 @@ any.describe().keys.key.rules.filter(e => e.name === 'min')
   * error 발생시에 적합한 사용 예제를 표시
   * select input 의 option 으로 사용하는 것은 원래의 목적을 벗어나는것?
   * dat.GUI 의 select format 으로 사용하려면 key 와 value 의 변경 필요
+
+##### Joi condition 속성
+* `any.validate()` 의 실행 이전에는 schema 정보를 읽고 condition 속성을 이용할 수 없음
 
 ### Joi & GraphQL
 https://medium.com/@samueljoli/joi2gql-easily-convert-joi-schemas-into-graphql-data-types-c10b8dffb9cd
