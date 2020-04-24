@@ -23,7 +23,7 @@ console.log(schema.validate(0.015)); // 0.02
 ```
 
 ##### 불변성 차이
-```
+```JS
 const testObj = { a: 1 };
 const schema = Joi.object();
 const tObj = schema.validate(testObj);
