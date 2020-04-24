@@ -22,6 +22,23 @@ console.log(schema.validate(0.013)); // 0.01
 console.log(schema.validate(0.015)); // 0.02
 ```
 
+##### 불변성 차이
+```
+const testObj = { a: 1 };
+const schema = Joi.object();
+const tObj = schema.validate(testObj);
+tObj.value.a = 3;
+console.log(testObj); // { a: 3 }
+
+const testObj = { a: 1 };
+const schema = Joi.object({
+  a: Joi.number(),
+});
+const tObj = schema.validate(testObj);
+tObj.value.a = 3;
+console.log(testObj); // { a: 1 }
+```
+
 ### Joi 를 이용하여 html input form 을 만들기
 ##### Joi schema 속성의 min, max 값을 확인하기
 ```JS
