@@ -39,6 +39,8 @@ tObj.value.a = 3;
 console.log(testObj); // { a: 1 }
 ```
 
+### Joi condition 속성
+
 ### Joi 를 이용하여 html input form 을 만들기
 ##### Joi schema 속성의 min, max 값을 확인하기
 ```JS
@@ -51,7 +53,7 @@ any.describe().keys.key.rules.filter(e => e.name === 'min')
 * [messages](https://hapi.dev/module/joi/api/?v=17.1.1#anymessagesmessages)
   * error 발생시에 적합한 사용 예제를 표시
   * select input 의 option 으로 사용하는 것은 원래의 목적을 벗어나는것?
-  * dat.GUI 의 select format 으로 사용하려면 key 와 value 의 변경이 
+  * dat.GUI 의 select format 으로 사용하려면 key 와 value 의 변경 필요
 
 ### Joi & GraphQL
 https://medium.com/@samueljoli/joi2gql-easily-convert-joi-schemas-into-graphql-data-types-c10b8dffb9cd
