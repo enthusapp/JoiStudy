@@ -53,6 +53,7 @@ any.describe().keys.key.rules.filter(e => e.name === 'min')
   * 기본 값을 수정하는 방식이라 원래의 기능에서 벗어나게 되고 호환성 문제가 발생함
   * 기본 값 반환하는 schema 와 custom 정보를 등록하는 별도의 method 를 추가한 schema 를 사용하는 방법 있음
   * method 를 추가할 때는 `any.concat(any2)` 사용
+  * method 를 추가해도 validation 한 입력값이 없으면 동작되지 않음
 * [messages](https://hapi.dev/module/joi/api/?v=17.1.1#anymessagesmessages)
   * error 발생시에 적합한 사용 예제를 표시
   * select input 의 option 으로 사용하는 것은 원래의 목적을 벗어나는것?
