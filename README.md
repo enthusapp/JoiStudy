@@ -1,4 +1,9 @@
 # JoiStudy
+Joi schema 를 만들고 schema 를 주요 함수에 들어갈 인자를 항상 유효하게 만드는 기능과,
+html input form 을 자동 생성하기 위한 정보용 구조체로 활용하는 것이 목표
+
+### 결론
+별도의 객체를 만들어 Joi schema 를 만들어 사용하는 것이 더 
 현재까지의 결론 html input form(ex-dat.GUI) 을 위한 별도의 객체를 만든뒤에 그 객체를 이용하여 Joi schema 를 만드는 것이 더 편리
 
 https://hapi.dev/module/joi/ @v17.1.1
