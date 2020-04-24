@@ -44,7 +44,7 @@ console.log(testObj); // { a: 1 }
 ### Joi 를 이용하여 html input form 을 만들기
 ##### Joi schema 속성의 min, max 값을 확인하기
 > joi.min.js 에는 반드시 필요하지 않은 함수가 제거되어 있다.
-> joi.min.js 에는 `describe` 함수가 없기 때문에 schema 내부 변수를 참조해야 한다.
+> web client 에서 사용할때는 `describe` 함수가 없기 때문에 schema 내부 변수를 참조해야 한다.
 ```JS
 any.describe().keys.key.rules.filter(e => e.name === 'min')
 ```
