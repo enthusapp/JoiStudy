@@ -1,7 +1,7 @@
 # JoiStudy
 Study Joi
 
-https://hapi.dev/module/joi/ @17.1.1
+https://hapi.dev/module/joi/ @v17.1.1
 
 * [x] Joi 를 통해서 default 값 얻기
 * [ ] Joi condition 에 따라서 default 값 얻기
