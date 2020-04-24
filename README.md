@@ -3,15 +3,11 @@ Study Joi
 
 https://hapi.dev/module/joi/ @v17.1.1
 
-### Joi 를 이용하여 항상 validate 한 값을 얻기
-##### Joi 를 통해서 default 값 얻기
+### Joi 를 이용하여 항상 유효한(valid) 값을 얻기
+##### Joi default 값 설정
+입력값이 없거나, 입력값이 유효 설정 범위를 벗어날 경우에 default 값을 반환
 ```JS
-any.default(10)
-```
-
-##### Joi condition 에 따라서 default 값 얻기
-```JS
-any.failover(20)
+any.default(10).failover(10)
 ```
 
 ##### 소숫점 자리수 조정하기
