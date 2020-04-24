@@ -1,12 +1,22 @@
 # JoiStudy
-Joi schema 를 만들고 schema 를 주요 함수에 들어갈 인자를 항상 유효하게 만드는 기능과,
-html input form 을 자동 생성하기 위한 정보용 구조체로 활용하는 것이 목표
-
-### 결론
-별도의 객체를 만들어 Joi schema 를 만들어 사용하는 것이 더 
-현재까지의 결론 html input form(ex-dat.GUI) 을 위한 별도의 객체를 만든뒤에 그 객체를 이용하여 Joi schema 를 만드는 것이 더 편리
 
 https://hapi.dev/module/joi/ @v17.1.1
+
+##### 목표
+Joi schema 하나로 아래 세가지 기능을 구현한다.
+* 주요 함수에 들어갈 인자를 항상 유효하게 만들기
+* html input form 을 자동 생성하기 위한 정보용 구조체로 활용하기
+* DB schema 를 생성하기
+
+##### 결론
+* 입력 함수를 유효하게 만드는 것은 Joi 의 목적에 맞는 목표이다.
+* html input form 을 만들기 위해 Joi 는 적합하지 않다.
+  * Joi schema 는 설정상태를 확인할수 있는 편리한 기능을 제공하지 않는다.
+  * 웹 클라이언트 모드에서는 특히 Joi schema 에 더 적은 함수가 제공된다.
+  * input 생성 조건이 입력 데이터에 따라 달라지는 경우를 Joi 에서 활용하려면 validate 동작이 있어야 한다.
+  * schema 정보로는 생성 조건을 사용할수 없다
+  * validate 동작에 custom method 를 추가하여 원하는 데이터를 얻게 하기 위해서는 입력값에 유효한 데이터가 존재해야만 한다. 같은 동작을 두번 수행하게 된다.
+* DB 에 대해선 더 많은 조사가 필요하다.
 
 ### Joi 를 이용하여 항상 유효한(valid) 값을 얻기
 ##### Joi default 값 설정
